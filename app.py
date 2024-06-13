@@ -13,6 +13,3 @@ def hash_parameter():
         return signature
     else:
         return "Parameter not provided. Please provide a parameter and secret key."
-
-if __name__ == '__main__':
-    app.run()
