@@ -32,7 +32,7 @@ def hash_parameter():
         response = requests.get(api_url)
         if response.status_code == 200:
             # API request was successful
-            return str(response)
+            return response.json()
         else:
             # API request failed
             return "API request failed. Status code: " + str(response.status_code)
